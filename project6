@@ -1,0 +1,96 @@
+#include <iostream>
+using  namespace std;
+
+int main()
+{
+	int s = 0;
+	int a, b;
+	int T = 0;
+	int K = 0;
+
+	int N;
+	cout << "enter number of times:";
+	cin >> N; // ввод кол-ва таймов
+	int i = 0 ;
+	do 
+	{
+		K = K + 1; //подсёт номера тайма для коректного вывода 
+		cout << "enter penalry time for A nd B teams in " << K << " time:";
+		cin >> a >> b; // ввод штрафного времени для каждой команды 
+
+		s = a + b; // сумма штрафного времени
+
+		T = T + s; //подсчёт сумм штрафного времени
+
+		i++;
+
+
+	} 
+	while (i < N);
+	
+	cout << " total penalty time: " << T << '\n';
+	system("pause");
+	return 0;
+
+}
+
+int main()
+{
+	int s = 0;
+	int a, b;
+	int T= 0 ;
+	int K = 0;
+
+	int N;
+	cout << "enter number of times:"; 
+	cin >> N; // ввод кол-ва таймов
+
+	for (int i = 0; i < N; i++)
+	{
+		K = K + 1; //подсёт номера тайма для коректного вывода 
+		cout << "enter penalry time for A nd B teams in " << K <<" time:" ;
+		cin >> a >> b; // ввод штрафного времени для каждой команды 
+
+		s = a + b; // сумма штрафного времени
+		
+		T = T + s; //подсчёт сумм штрафного времени
+	
+
+			
+	}
+	cout << " total penalty time: " << T << '\n';
+	system("pause");
+	return 0;
+
+}
+int main()
+{
+	int s = 0;
+	int a, b;
+	int T = 0;
+	int K = 0;
+
+	int N;
+	cout << "enter number of times:";
+	cin >> N; // ввод кол-ва таймов
+
+	int i = 0;
+	while ( i < N)
+	{
+		i++;
+		K = K + 1; //подсёт номера тайма для коректного вывода 
+		cout << "enter penalry time for A nd B teams in " << K << " time:";
+		cin >> a >> b; // ввод штрафного времени для каждой команды 
+
+		s = a + b; // сумма штрафного времени
+
+		T = T + s; //подсчёт сумм штрафного времени
+
+
+
+	}
+	cout << " total penalty time: " << T << '\n';
+	system("pause");
+	return 0;
+
+}
